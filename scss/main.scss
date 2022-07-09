@@ -224,7 +224,7 @@ nav {
         width: 100%;
         min-height: 100%;
         z-index: 4;
-        background: linear-gradient(180deg, rgba(0, 0, 0, .4) 90%, rgba(0, 212, 255, 0) 100%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, .4) 35%, rgba(0, 212, 255, 0) 100%);
 
     }
 
@@ -235,6 +235,7 @@ nav {
         overflow: hidden;
         background: url('/assets/hay.jpg');
         background-repeat: no-repeat;
+        background-position: center ;
         background-size: cover;
         min-width: 100%;
         min-height: 100%;
@@ -318,7 +319,7 @@ nav {
         i {
             margin: 1em 1em 0;
 
-            font-size: 1em;
+            font-size: 1.3em;
         }
 
         h2 {
@@ -437,7 +438,7 @@ nav {
     min-height: $form-height;
     width: 100%;
     background: url('/assets/wood-2.jpg');
-    background-size: contain;
+    background-size: cover;
     
     p {
         padding-top: 1.5em;
@@ -602,7 +603,7 @@ nav {
 
     button {
         font-family: $roboto, sans-serif;
-        font-weight: 100;
+        font-weight: 500;
         margin: auto 0;
         overflow: visible;
         position: absolute;
@@ -711,13 +712,15 @@ footer {
        display: block !important;
     };
     nav{
+        background: rgba(255, 255, 255, .9);
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly !important;
-        position: relative !important;
-        top: 0 !important;
+        position: absolute !important;
+        top: 20%;
         .nav-item{
             padding: 1.5em;
+            background: none;
         }
         &::after{
             display: block;
@@ -735,7 +738,7 @@ footer {
         h1{
             font-size: 2.4em;
         }
-        height: 70vh;
+        height: 100vh;
     }
     .carousel{
         max-height: 100%;
@@ -754,7 +757,7 @@ footer {
     }
     form{
         min-width: 0 !important;
-        width: 60%;
+        width: 40%;
         margin: 0 auto;
 
     }
