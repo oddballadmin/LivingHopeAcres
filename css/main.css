@@ -556,7 +556,8 @@ nav .nav-item a {
 .stock-card-container {
   display: flex;
   width: 100%;
-  height: auto;
+  flex-flow: column;
+  min-height: 20em;
   justify-content: center;
   text-align: center;
 }
@@ -565,36 +566,50 @@ nav .nav-item a {
   display: flex;
   flex-flow: column nowrap;
   width: 90%;
-  height: 20em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  -webkit-clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
+          clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
+  margin: 1em auto;
 }
 .stock-card-container .card .card-header {
-  margin: auto 0;
   height: auto;
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   text-align: center;
-  background-color: #000;
-  margin-bottom: 1em;
-  padding: 0.5em 0;
+  background: url("/assets/wood.jpg");
+  background-size: contain;
 }
 .stock-card-container .card .card-header h3 {
+  padding: 0.5em 0;
   color: #fff;
   height: 100%;
   font-family: "Roboto", sans-serif;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 500;
   line-height: 1em;
 }
+.stock-card-container .card .breed-type {
+  padding: 0.5em 0;
+  font-size: 1.2em;
+}
 .stock-card-container .card .card-img {
-  margin: 1em auto;
-  width: 80%;
-  height: 10em;
-  background-color: #000;
+  margin: 0 auto;
+  width: 100%;
+  height: 15em;
+  background: url("/assets/wood.jpg");
+  -webkit-clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
+          clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
+  padding: 0.25em;
 }
 .stock-card-container .card .card-img img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
+  -webkit-clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
+          clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
 }
 
 .closing-text {
@@ -767,5 +782,14 @@ footer .foot-container .social-icons i {
   }
   .sect-head .sub-head h4 {
     font-size: 1.2em;
+  }
+
+  .stock-card-container {
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .stock-card-container .card {
+    width: 20%;
   }
 }/*# sourceMappingURL=main.css.map */
