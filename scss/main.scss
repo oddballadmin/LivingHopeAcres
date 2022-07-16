@@ -24,7 +24,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: url('/assets/wall.jpg');
+    background: url('/assets/mulch.jpg');
     background-size: cover;
 }
 
@@ -35,7 +35,7 @@ main {
     height: auto;
     width: 100%;
     flex-flow: column nowrap;
-    background-color: rgba(227, 248, 255, 0.90);
+    background-color: rgba(227, 248, 255, 0.97);
     line-height: 1.5em;
 }
 .head{
@@ -52,7 +52,7 @@ header {
     flex-flow: row nowrap;
     align-items: top;
     position: relative;
-    background: linear-gradient(45deg, rgba(0, 181, 226, 0.175) 50%, rgba(0, 212, 255, 0) 100%);
+    // background: linear-gradient(45deg, rgba(0, 181, 226, 0.175) 50%, rgba(0, 212, 255, 0) 100%);
     height: 10em;
     padding-top: 1rem;
     width: 100%;
@@ -116,11 +116,12 @@ header {
     }
     .email{
         display: none;
-        font-size: 1.2em;
+        font-size: 1.4em;
         
         text-decoration: none;
         padding: 0 .5rem;
         i{
+
             color: #fff;
         };
         a{
@@ -145,7 +146,7 @@ header {
     }
 
     i {
-        font-size: 1.5em;
+        font-size: 1.7em;
         padding: 0 .5rem;
     }
 
@@ -164,7 +165,7 @@ header {
 nav {
     z-index: 10;
     display: none;
-    height: auto;
+    height: 60vh;
     width: 100%;
     flex-flow: column nowrap;
     background-color: rgba(250, 250, 250, .8);
@@ -202,8 +203,11 @@ nav {
         }
 
         a {
+            font-family: Georgia, 'Times New Roman', Times, serif;
             text-transform: uppercase;
             text-decoration: none;
+            font-weight: 800;
+            letter-spacing: .4em;
         }
     }
 
@@ -525,7 +529,6 @@ nav {
     background-repeat: no-repeat;
     padding: 2rem 0 4rem;
     box-shadow: 0 -2px 5px, 0 2px 5px;
-
 }
 
 .blog-post {
@@ -533,7 +536,7 @@ nav {
     margin: auto;
     text-align: left;
     position: relative;
-    width: 90%;
+    width: 100%;
     margin-top: 1rem;
     background: #fff;
     padding: 1rem 0;
@@ -595,6 +598,7 @@ nav {
     z-index: 5;
     height: .9em;
     box-shadow: 0 -2px 20px;
+    
 
     &::after {
         content: '';
@@ -616,8 +620,8 @@ nav {
         font-size: 1em;
         left: 50%;
         transform: translateX(-50%);
-        padding: 0.5em 1em;
-        box-shadow: 0 2px 5px;
+        padding: 1em 1.5em;
+        box-shadow: 0 5px 5px;
 
     }
 }
@@ -626,6 +630,7 @@ nav {
     display: block;
     text-align: center;
     width: 100%;
+    font-size: 1.2em;
     bottom: 0;
     margin-top: 2em;
     color: #fff;
@@ -642,22 +647,25 @@ nav {
     justify-content: center;
     text-align: center;
     .card{
-        background-color: #fff;
         display: flex;
         flex-flow: column nowrap;
+        min-width: 18em;
+        max-width: 30em;
         width: 90%;
         border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+        border-top-right-radius: 30px;
+        
         clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
-        margin: 1em auto;
 
+        margin: 1em auto;
+        
         .card-header{
             height: auto;
             width: 100%;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             text-align: center;
-            background: url('/assets/wood.jpg');
+            background: url('/assets/wood-border.jpg');
             background-size: contain;
             h3{
                 padding: .5em 0;
@@ -670,21 +678,23 @@ nav {
             }
         }
         .breed-type{
+            background: url('/assets/wood-border.jpg');
+            background-size: contain;
             padding: .5em 0;
             font-size: 1.2em;
+            color: #fff;
         }
         .card-img{
-            margin: 0 auto;
+            position: relative;
             width: 100%;
-            height: 15em;
-            background: url('/assets/wood.jpg');
-        clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
-        padding: .25em;
+            height: 20em;
+            
+            
+            
             img{
                 object-fit: cover;
                 height: 100%;
                 width: 100%;
-                clip-path: polygon(50% 100%, 100% 74%, 100% 0, 0 0, 0 74%);
                 
             }
         }
@@ -693,18 +703,20 @@ nav {
 .closing-text {
     margin-left: auto;
     text-align: center;
-    margin: 1rem 0;
-    width: 100%;
+    margin: 3rem auto;
+    width: 80%;
     padding: 1em;
     line-height: 1.5rem;
+    font-size: 1.25em;
+    
 }
 
 footer {
     display: flex;
     height: auto;
     background-size: contain;
-    background: url('/assets/wood-2.jpg');
-    background-repeat: no-repeat;
+    background: url('/assets/wood-border.jpg');
+    
     min-height: 10rem;
     width: 100%;
     box-shadow: 0 -2px 5px;
@@ -719,6 +731,7 @@ footer {
         color: #fff;
         
         justify-content: space-around;
+        
         a {
             &:visited {
                 color: #fff;
@@ -753,8 +766,12 @@ footer {
 
 @media only screen and (min-width: 992px) {
     .h-items{
+        margin: 2em 0;
+        align-items: center;
+
         .brand{
         margin-left: 5em;
+        height: 8em;
     }
     .side-bar{
         margin-right:  5em;
@@ -767,15 +784,19 @@ footer {
         
     };
     header{
-        height: 20vh;
+        min-height: 20vh;
+        height: auto;
         h3{
-            margin-left: 1.5em;
+            margin-left: 1em;
             display: block !important;
             color: #000;
+            font-size: 1.6em !important;
+            
         };
     };
-   
-
+    nav{
+        height: auto;
+    }
     .mobile-nav-btn{
         display: none;
         
@@ -810,7 +831,10 @@ footer {
    
     .hero{
         h1{
-            font-size: 2.4em;
+            font-size: 4.4em;
+        }
+        p{
+            font-size: .8em;
         }
         height: 100vh;
     }
@@ -831,7 +855,7 @@ footer {
     }
     form{
         min-width: 0 !important;
-        width: 40%;
+        width: 30%;
         margin: 0 auto;
 
     }
@@ -840,7 +864,10 @@ footer {
         flex-flow: row wrap;
     }
     .blog-post{
-        width: 30%;
+        width: 25%;
+        .blog-heading{
+            margin-left: 2em;
+        }
     }
     footer{
         display: flex;
@@ -859,6 +886,7 @@ footer {
                 width: auto !important;
                 margin: 0 1em;
             }
+            
         };
     };
     .sect-head{
@@ -887,6 +915,8 @@ footer {
         justify-content: center;
         .card{
             width: 20%;
+
+           
         }
     }
 }
