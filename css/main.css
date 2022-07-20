@@ -81,6 +81,7 @@ header::after {
 .brand h3 {
   display: none;
   font-size: 1.2em;
+  letter-spacing: 0.2rem;
 }
 .brand h3 a {
   text-decoration: none;
@@ -173,7 +174,7 @@ nav .nav-item a {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 800;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2rem;
 }
 
 .hero {
@@ -670,12 +671,10 @@ footer .foot-container .social-icons i {
   .h-items .side-bar {
     margin-right: 5em;
   }
-
   main {
     min-height: 500px;
     width: 100%;
   }
-
   header {
     min-height: 20vh;
     height: auto;
@@ -686,19 +685,15 @@ footer .foot-container .social-icons i {
     color: #000;
     font-size: 1.6em !important;
   }
-
   nav {
     height: auto;
   }
-
   .mobile-nav-btn {
     display: none;
   }
-
   .email {
     display: block !important;
   }
-
   nav {
     background: rgba(255, 255, 255, 0.9);
     display: flex;
@@ -722,23 +717,20 @@ footer .foot-container .social-icons i {
     width: 100%;
     height: 100%;
   }
-
   .hero {
     height: 100vh;
   }
   .hero h1 {
-    font-size: 4.4em;
+    font-size: 3.4em;
   }
   .hero p {
     font-size: 0.8em;
   }
-
   .carousel {
     max-height: 100%;
     height: 75vh;
     width: 100%;
   }
-
   .contact-form {
     width: 100%;
     margin: auto;
@@ -749,25 +741,21 @@ footer .foot-container .social-icons i {
     width: 60%;
     font-size: 1.1em;
   }
-
   form {
     min-width: 0 !important;
     width: 30%;
     margin: 0 auto;
   }
-
   .blog-list {
     width: 100%;
     flex-flow: row wrap;
   }
-
   .blog-post {
     width: 25%;
   }
   .blog-post .blog-heading {
     margin-left: 2em;
   }
-
   footer {
     display: flex;
     min-height: 2em !important;
@@ -786,7 +774,6 @@ footer .foot-container .social-icons i {
     width: auto !important;
     margin: 0 1em;
   }
-
   .sect-head {
     font-size: 1.2em;
   }
@@ -801,7 +788,6 @@ footer .foot-container .social-icons i {
   .sect-head .sub-head h4 {
     font-size: 1.2em;
   }
-
   .stock-card-container {
     flex-flow: row nowrap;
     width: 100%;
