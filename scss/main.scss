@@ -24,7 +24,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: url('/assets/mulch.jpg');
+    background: url('/assets/sky.jpg');
     background-size: cover;
 }
 
@@ -35,7 +35,7 @@ main {
     height: auto;
     width: 100%;
     flex-flow: column nowrap;
-    background-color: rgba(227, 248, 255, 0.97);
+    background-color: rgba(227, 248, 255, 0.9);
     line-height: 1.5em;
 }
 .head{
@@ -772,6 +772,7 @@ footer {
 
         .brand{
         margin-left: 5em;
+        padding: .5em 0;
         height: 8em;
     }
     .side-bar{
@@ -785,7 +786,7 @@ footer {
         
     };
     header{
-        min-height: 20vh;
+        min-height: 200px;
         height: auto;
         h3{
             margin-left: 1em;
@@ -812,7 +813,7 @@ footer {
         flex-flow: row nowrap;
         justify-content: space-evenly !important;
         position: absolute !important;
-        top: 20%;
+        top: 200px;
         .nav-item{
             padding: 1.5em;
             background: none;
